@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #555;
+}
+
+.wrap {
+    width: 95%;
+    margin: 5px auto;
+    background-color: #fcfcef;
+    border: 1px solid #eee;
+    padding: 10px;
+    padding-bottom: 50px;
+
+}
+
+/* /// header /// */
+
+.megi {
+    position: absolute;
+    left: 5px;
+    width: 110px;
+    transition: left 15s linear 1s;
+}
+
+.megi:hover {
+    left: 1200px;
+}
+
+.headers {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    font-family: Monofett, sans-serif;
+}
+
+header h1 {
+    flex: 1;
+    /* position: relative;
+    left: 200px; */
+    margin-left: 100px;
+}
+
+header h2 {
+    flex: 2;
+    margin-top: 30px;
+}
+
+/* nav ul {
+    display: inline-block;
+} */
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+    border: 1px solid #aaa;
+    background: rgba(100, 110, 121, 0.467);
+}
+
+nav a {
+    text-decoration: none;
+    font-variant: small-caps;
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 1s;
+}
+
+nav a:hover {
+    color: #567;
+    font-size: 20px;
+    padding: 30px;
+}
+
+
+/* /// main /// */
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main h2 {
+    font-family: "Luckiest Guy", "Rockwell Extra Bold", sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3 {
+    border: 1px solid #567;
+    padding: 1px 10px;
+    box-shadow: 3px 3px 5px;
+}
+
+.video {
+    margin: 50px auto;
+    width: 70%;
+}
+
+.pesma {
+    margin: 50px;
+    margin-left: 200px;
+}
+
+/* /// #on top /// */
+
+.jarboli-video, .text, .extra {
+    position: relative;
+}
+
+.on-top {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #155;
+    text-decoration: none;
+    background-color: #ccc;
+    padding: 0 2px;
+}
+
+
+
+/* /// extra /// */
+
+.extra {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+}
+
+/* .extra a {
+    margin: 0 auto;
+} */
+
+.center {
+    margin: 50px auto;      
+    width: 70%;
+}
+
+/* /// ne uspevam zadovoljavajuce da centriram kvadrat! /// */
+
+.kvadrat {
+    width: 300px;
+    height: 300px;
+    /* background: linear-gradient(to bottom, rgb(5, 5, 5), rgb(0, 0, 0)), url("db.jpg"); */
+    background-color: #000;
+    text-indent: -9999px;
+    display: block;
+    color: #000;
+    border-radius: 0;
+    transition: background-color, border-radius 3s ease-in-out 0.3s;
+} 
+
+.kvadrat:hover {
+    /* background: url("db.jpg"); */
+    background-color: #cfcfcf;
+    border-radius: 300px;
+}
+
+.db {
+    position: absolute;
+    top: 170px;
+    left: 200px;
+    font-size: 100px;    /* /// podseti se kako ide vertikalno centriranje!?  /// */
+    color: #000;
+    margin: 0 auto;
+    transition: color 2s ease-in-out 0.2s;   
+}
+
+.db:hover {
+    color: #fff;
+}
+
+.extra em {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+
+
