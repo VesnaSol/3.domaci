@@ -51,10 +51,6 @@ header h2 {
     margin-top: 30px;
 }
 
-/* nav ul {
-    display: inline-block;
-} */
-
 nav li {
     display: inline;
     margin-right: 10px;
@@ -103,8 +99,8 @@ h3 {
 }
 
 .pesma {
-    margin: 50px;
-    margin-left: 200px;
+    margin: 0 auto;
+    width: 200px;
 }
 
 /* /// #on top /// */
@@ -148,7 +144,8 @@ zato sto je uzi od roditelja, ne znam sto sam se istripovala...   /// */
     position: relative;
     /* background: linear-gradient(to bottom, rgb(5, 5, 5), rgb(0, 0, 0)), url("db.jpg"); */
     background-color: #000;
-    /* display: block;   sto mi je ovo trebalo, ne secam se sta sam mislila...  */
+    /* display: block;   sto mi je ovo trebalo, ne secam se sta sam mislila... ---> da bi ceo kvadrat bio link! 
+    da bi na ceo moglo da se klikne. medjutim, i ovako radi, bez display: block; zato sto je div.kvadrat u okviru <a>...   */
     color: #000;
     border-radius: 0;
     transition: background-color, border-radius 3s ease-in-out 0.3s;
@@ -166,7 +163,8 @@ zato sto je uzi od roditelja, ne znam sto sam se istripovala...   /// */
     left: 25%;
     /* top: 170px;
     left: 200px; */
-    font-size: 100px;    /* /// podseti se kako ide vertikalno centriranje!? ---> position: asolute; top: 50%; left: 50%;  tako nekako, a roditelj position: relative;   /// */
+    font-size: 100px;    /* /// podseti se kako ide vertikalno centriranje!? ---> vidi iznad: 
+    position: absolute; top: 50%; left: 50%;  tako nekako, a roditelj position: relative;   /// */
     color: #000;
     /* margin: 0 auto;    ne radi, izgleda, na apsolutno pozicioniranom elementu */
     transition: color 2s ease-in-out 0.2s;   
