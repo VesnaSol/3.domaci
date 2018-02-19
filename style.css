@@ -51,10 +51,6 @@ header h2 {
     margin-top: 30px;
 }
 
-/* nav ul {
-    display: inline-block;
-} */
-
 nav li {
     display: inline;
     margin-right: 10px;
@@ -103,8 +99,8 @@ h3 {
 }
 
 .pesma {
-    margin: 50px;
-    margin-left: 200px;
+    margin: 0 auto;
+    width: 200px;
 }
 
 /* /// #on top /// */
@@ -128,29 +124,28 @@ h3 {
 /* /// extra /// */
 
 .extra {
-    position: relative;
     width: 80%;
     margin: 50px auto;
 }
-
-/* .extra a {
-    margin: 0 auto;
-} */
 
 .center {
     margin: 50px auto;      
     width: 70%;
 }
 
-/* /// ne uspevam zadovoljavajuce da centriram kvadrat! /// */
+/* /// ne uspevam zadovoljavajuce da centriram kvadrat!
+---> sad je uspelo, parent div.center je bio centriran ali je trebalo i u okviru njega centrirati div.kvadrat, 
+zato sto je uzi od roditelja, ne znam sto sam se istripovala...   /// */
 
 .kvadrat {
     width: 300px;
     height: 300px;
+    margin: 0 auto;
+    position: relative;
     /* background: linear-gradient(to bottom, rgb(5, 5, 5), rgb(0, 0, 0)), url("db.jpg"); */
     background-color: #000;
-    text-indent: -9999px;
-    display: block;
+    /* display: block;   sto mi je ovo trebalo, ne secam se sta sam mislila... ---> da bi ceo kvadrat bio link! 
+    da bi na ceo moglo da se klikne. medjutim, i ovako radi, bez display: block; zato sto je div.kvadrat u okviru <a>...   */
     color: #000;
     border-radius: 0;
     transition: background-color, border-radius 3s ease-in-out 0.3s;
@@ -164,11 +159,14 @@ h3 {
 
 .db {
     position: absolute;
-    top: 170px;
-    left: 200px;
-    font-size: 100px;    /* /// podseti se kako ide vertikalno centriranje!?  /// */
+    top: 30%;
+    left: 25%;
+    /* top: 170px;
+    left: 200px; */
+    font-size: 100px;    /* /// podseti se kako ide vertikalno centriranje!? ---> vidi iznad: 
+    position: absolute; top: 50%; left: 50%;  tako nekako, a roditelj position: relative;   /// */
     color: #000;
-    margin: 0 auto;
+    /* margin: 0 auto;    ne radi, izgleda, na apsolutno pozicioniranom elementu */
     transition: color 2s ease-in-out 0.2s;   
 }
 
