@@ -98,6 +98,22 @@ h3 {
     width: 70%;
 }
 
+.video-aspect-ratio {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-aspect-ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .pesma {
     margin: 0 auto;
     width: 200px;
@@ -161,12 +177,10 @@ zato sto je uzi od roditelja, ne znam sto sam se istripovala...   /// */
     position: absolute;
     top: 30%;
     left: 25%;
-    /* top: 170px;
-    left: 200px; */
     font-size: 100px;    /* /// podseti se kako ide vertikalno centriranje!? ---> vidi iznad: 
     position: absolute; top: 50%; left: 50%;  tako nekako, a roditelj position: relative;   /// */
     color: #000;
-    /* margin: 0 auto;    ne radi, izgleda, na apsolutno pozicioniranom elementu */
+    /* margin: 0 auto;    ne radi na apsolutno pozicioniranom elementu */
     transition: color 2s ease-in-out 0.2s;   
 }
 
