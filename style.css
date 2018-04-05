@@ -25,12 +25,12 @@ body {
     position: absolute;
     left: 5px;
     width: 110px;
-    transition: left 15s linear 1s;
+    /* transition: left 15s linear 1s; */
 }
 
-.megi:hover {
+/* .megi:hover {
     left: 1200px;
-}
+} */
 
 .headers {
     display: flex;
