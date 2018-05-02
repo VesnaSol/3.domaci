@@ -181,11 +181,14 @@ zato sto je uzi od roditelja, ne znam sto sam se istripovala...   /// */
 
 .db {
     position: absolute;
-    top: 30%;
-    left: 25%;
-    font-size: 100px;    /* /// podseti se kako ide vertikalno centriranje!? ---> vidi iznad: 
+    top: 33%;
+    left: 27%;
+    font-size: 100px;  
+    line-height: 1;
+      /* /// podseti se kako ide vertikalno centriranje!? ---> vidi iznad: 
     position: absolute; top: 50%; left: 50%;  tako nekako, a roditelj position: relative;   /// */
     color: #000;
+    
     /* margin: 0 auto;    ne radi na apsolutno pozicioniranom elementu */
     transition: color 2s ease-in-out 0.2s;   
 }
